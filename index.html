@@ -2,68 +2,140 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Nandkishor01 - 2021-24</title>
+  <title>Portfolio - Combined</title>
   <link rel="shortcut icon" href="https://github.com/Nandkishor01/About-me/blob/main/The%20King.png?raw=true">
+  <!-- Styles for the uploaded file -->
   <link rel="stylesheet" href="./styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,400,600" rel="stylesheet" type="text/css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/parallax-theme/assets/animate.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Styles for the intro section -->
+  <link rel="stylesheet" href="css/kube.min.css" />
+  <link rel="stylesheet" href="css/custom.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:700"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Lato:400,700"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <style>
+    /* Inline styling for the intro */
+    .intro h1:before {
+      content: "Shreyas";
+    }
+  </style>
 </head>
 <body>
+
+<!-- navbar header -->
 <div class="nav-header">
   <div class="nav-brand"></div>
   <i class="fa fa-bars fa-3x"></i>
-  <div class="header-links">
-    <ul>
-      <li data-menuanchor="fourthPage"><a href="#contact">CONTACT</a></li>
-      <li data-menuanchor="thirdPage"><a href="#projects">PROJECTS</a></li>
-      <li data-menuanchor="secondPage"><a href="#about">ABOUT</a></li>
-    </ul>
-  </div>
-</div>
-
-<!-- Introduction -->
-<div class="intro section" id="about">
-  <div class="container">
-    <p>Hi, I’m Shreyas B S</p>
-    <div class="units-row units-split wrap">
-      <div class="unit-20">
-        <img src="./img/code.svg" alt="Avatar" />
-      </div>
-      <div class="unit-80">
-        <h1>I Am a..<br /><span id="typed"></span></h1>
-      </div>
-      <p>
-        I am MERN Full stack web developer with a specialization in
-        front-end Technologies Like React JS, JavaScript Redux, Material UI, Tailwind CSS
-        etc, also familiar with backend technology like Node Js and its framework Express Js. 
-        I am currently in the process of exploring and learning more
-        technologies to strengthen my arsenal. I am adaptable to new
-        technology to enhance my skills and capabilities.
-      </p>
+    <div class="header-links">
+      <ul>
+        <li data-menuanchor="fourthPage"><a href="#contact">CONTACT</a></li>
+        <li data-menuanchor="thirdPage"><a href="#projects">PROJECTS</a></li>
+        <li data-menuanchor="secondPage"><a href="#about">ABOUT</a></li>
+      </ul>
     </div>
   </div>
 </div>
 
-<!-- Existing Content from Uploaded File -->
+<!-- sidebar slider -->
+<div class="nav-screen">
+  <i class="fa fa-times fa-3x"></i>
+  <div class="nav-container">
+    <div class="nav-links">
+      <ul id='myMenu'>
+        <li data-menuanchor="secondPage"><a href="#about">ABOUT</a></li>
+        <li data-menuanchor="thirdPage"><a href="#projects">PROJECTS</a></li>
+        <li data-menuanchor="fourthPage"><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Fullpage container -->
 <div id="fullpage">
-  <div class="section aboutme" data-anchor="aboutme">
-    <div class="opaque-bg animated fadeInDown">
-      <h1 style="color:white">Nandkishor<span style="color:#337ab7">/</span>01</h1>
-      <p><span id="holder"></span><span class="blinking-cursor">|</span></p>
+
+  <!-- Intro Section -->
+  <div class="section intro" id="about">
+    <div class="container">
+      <p>Hi, I’m Shreyas B S</p>
+      <div class="units-row units-split wrap">
+        <div class="unit-20">
+          <img src="./img/code.svg" alt="Avatar" />
+        </div>
+        <div class="unit-80">
+          <h1>I Am a..<br /><span id="typed"></span></h1>
+        </div>
+        <p>
+          I am MERN Full stack web developer with a specialization in
+          front-end Technologies Like React JS, JavaScript Redux, Material UI, Tailwind CSS,
+          etc. I am also familiar with backend technologies like Node.js and Express.js.
+          Currently exploring and learning more technologies to strengthen my arsenal.
+          Adaptable to new technology to enhance my skills and capabilities.
+        </p>
+      </div>
     </div>
-    <i id="moveDown" class="fa fa-chevron-down fa-3x bounce"></i>
   </div>
 
-  <!-- Your existing sections (skills, projects, contact, etc.) remain untouched -->
+  <!-- Skills Section -->
+  <div class="section" data-anchor="skills">
+    <div class="content">
+      <h1 class="wow fadeInDown" data-wow-delay="0.2s" style="color:#337ab7">ABOUT ME</h1>
+      <p class="wow fadeInDown" data-wow-delay="0.2s">Hi, I'm Nandkishor01! I'm a Student & Noobie Developer!</p>
+      <div class=" wow fadeInUp container-skillbar" data-wow-delay="0.2s">
+        <!-- Add skill bars here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects Section -->
+  <div class="section" data-anchor="projects">
+    <div class="content-slide">
+      <!-- Slides for each project -->
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="section" data-anchor="contact">
+    <div class="content wow fadeInDown" data-wow-delay="0.2s">
+      <h1 style="color:#337ab7">CONTACT</h1>
+      <p>Whether you're interested in working with me or just want to say hello, I'd love to hear from you!</p>
+      <div class="social-links">
+        <span><a href="https://www.instagram.com/nandkishorsinghrajawat/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></span>
+        <span><a href="https://twitter.com/Nandkis03175812" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></span>
+        <span><a href="https://github.com/nandkishor01/" target="_blank"><i class="fa fa-github fa-2x"></i></a></span>
+      </div>
+    </div>
+  </div>
 </div>
 
+<!-- JavaScript -->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://s3-us-west-2.amazonaws.com/parallax-theme/assets/wow.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js"></script>
+
+<!-- Intro-specific JS -->
+<script src="js/typed.min.js"></script>
+<script>
+  $(function () {
+    $("#typed").typed({
+      strings: [
+        "Software Engineer Actually",
+        "Frontend Developer..",
+        "Mechanical En... oh..‼",
+      ],
+      typeSpeed: 90,
+      backDelay: 700,
+      contentType: "html",
+      loop: !0,
+    });
+  });
+</script>
 </body>
 </html>
